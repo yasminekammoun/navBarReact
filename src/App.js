@@ -1,26 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Dropdown from './Dropdown';
+import './Dropdown.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return (<div className="nav-bar">
+        <a className="home active" id="col" href='#home'> Home</a>
+        <a className="serv" href='#home'>Services<Dropdown /></a>
+        <a href='#home'> Contact</a>
     </div>
-  );
+    );
 }
-
 export default App;
